@@ -200,7 +200,7 @@ def status():
     print(f"Days traveled, {g.daysTraveled}!")
 
 def rest():
-    print("")
+    print("") #Need to incorporate raising HP when healing...
 
 def shop(Economy):
     food = g.selectedCharacter.get("Backpack").get("Food")
