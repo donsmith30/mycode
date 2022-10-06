@@ -1,0 +1,36 @@
+---
+Boring:
+  State: Oregon
+  NextStop: Boise
+  Path: US-26E and US-20E
+  Distance: 447
+Boise:
+  State: Idaho
+  NextStop: Soda Springs
+  Path: US-26E and US-20E
+  Distance: 447 #update the miles from here down
+Soda Springs:
+  State: Idaho
+  NextStop: Independence Rock
+  Path: US-26E and US-20E
+  Distance: 447
+Independence Rock:
+  State: Wyoming
+  NextStop: Fort Robinson
+  Path: US-26E and US-20E
+  Distance: 447
+Fort Robinson:
+  State: Nebraska
+  NextStop: Johnstown
+  Path: US-26E and US-20E
+  Distance: 447
+Johnstown:
+  State: Nebraska
+  NextStop: Independence
+  Path: US-26E and US-20E
+  Distance: 447
+Independence:
+  State: Missouri
+  NextStop: End
+  Path: US-26E and US-20E
+  Distance: 447
