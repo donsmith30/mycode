@@ -1,0 +1,56 @@
+---
+Banker:
+  Profession: Banker
+  Bio: A master of managing money starts out with a substantial life savings
+  Health:
+    HitPoints: 20
+    MaxHealth: 20
+    Ailment: 0
+  Backpack:
+    Gold: 400
+    Medicine: 0
+    Food: 20
+Doctor:
+  Profession: Doctor
+  Bio: Somewhat wealthy healthy and writes perscriptions a tripple threat
+  Health:
+    HitPoints: 30
+    MaxHealth: 30
+    Ailment: 0
+  Backpack:
+    Gold: 200
+    Medicine: 10
+    Food: 50
+Hunter:
+  Profession: Hunter
+  Bio: You have a cache of food saved up from recent hunts and can carry more than your fair share
+  Health:
+    HitPoints: 20
+    MaxHealth: 20
+    Ailment: 0
+  Backpack:
+    Gold: 100
+    Medicine: 2
+    Food: 150
+Hiker:
+  Profession: Hiker
+  Bio: You are a packing expert and prepared for almost anything on the trail
+  Health:
+    HitPoints: 20
+    MaxHealth: 20
+    Ailment: 0
+  Backpack:
+    Gold: 50
+    Medicine: 5
+    Food: 50
+KC:
+  Profession: redacted
+  Bio: redacted
+  Health:
+    HitPoints: 100
+    MaxHealth: 100
+    Ailment: 0
+  Backpack:
+    Gold: 1000
+    Medicine: 100
+    Food: 1000
