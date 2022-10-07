@@ -71,9 +71,9 @@ def character_select():
         s.CHARACTER = (input("Type a profession to see character"
         +" info and confirm your choice: ")).title()
         # title case for character to make sure no errors
-        if s.CHARACTER in s.CHARACTERS: 
+        if s.CHARACTER in s.CHARACTERS:
             s.SELECTEDCHARACTER=s.CHARACTERS[s.CHARACTER]
-            print("You were a " + str(s.SELECTEDCHARACTER.get("Profession")) 
+            print("You were a " + str(s.SELECTEDCHARACTER.get("Profession"))
             + ", " + str(s.SELECTEDCHARACTER.get("Bio")+ "."))
             status()
             # small story and status prints so player can decide their character
@@ -128,7 +128,7 @@ def town():
         if town_action.lower() == "leave":
             # using floordiv in my farewell msg so we don't get weird remainders
             print("the journey ahead is " + str(s.LANDMARKS[s.CURRENTLOCATION].get("Distance")) +
-            " miles, you should get there in " 
+            " miles, you should get there in "
             + str(o.floordiv(s.LANDMARKS[s.CURRENTLOCATION].get("Distance"),12)) + " days!")
             print("You have " + str(s.CHARACTERS[s.CHARACTER].get("Backpack").get("Food"))
             + " portions of food!")
@@ -309,7 +309,7 @@ def camp():
     clear()
     print("Setting up camp..."
     + "\nEvery day of rest you will consume food, but heal damage delt by the journey!"
-    + "\nUntreated ailments will still hurt you over time") 
+    + "\nUntreated ailments will still hurt you over time")
     while True:
         status()
         camp_action = input("Would you like to [Medicate], [Rest] or [Leave]? ")

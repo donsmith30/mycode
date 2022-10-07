@@ -79,7 +79,7 @@ def the_cronenberg():
                     positive_inventory_change("Gold", 100, 500)
                 elif random.randint(1, 100) >= 60:
                     print('He says "Thank you friend, here is a bag of medicine I found')
-                    positive_inventory_change("Medicine", 2, 6) 
+                    positive_inventory_change("Medicine", 2, 6)
                 elif random.randint(1, 100) >= 40:
                     print('He says "Thank you friend, here is a bag of goodies I found')
                     positive_inventory_change("Medicine", 1, 4)
@@ -187,10 +187,10 @@ def the_gnomes():
     clear()
     status()
 
-def positive_inventory_change(item, l, u):
+def positive_inventory_change(item, lower, upper):
     """adjust to give good things"""
     item_mod = s.SELECTEDCHARACTER.get("Backpack").get(item)
-    item_gain = random.randint(l, u)
+    item_gain = random.randint(lower, upper)
     # biggest thing on this function is we floordiv by 1
     # this is to make the number whole
     item_mod = o.floordiv(o.add(item_mod, item_gain),1)
@@ -201,7 +201,7 @@ def negative_inventory_change(item, percent):
     """Negative based on your % in .int format"""
     item_mod = s.SELECTEDCHARACTER.get("Backpack").get(item)
     # noticed a couple things here 1st dont want to throw error for a zero
-    # next if the risk was under 1 we had more issues... that is how I 
+    # next if the risk was under 1 we had more issues... that is how I
     # was lead to max()
     if item_mod >= 1:
         risk = o.mul(percent, item_mod)
@@ -227,11 +227,11 @@ def health_change(percent):
     else:
         print("No health to lose! You will die")
 
-def ailment_change(l, u):
+def ailment_change(lower, upper):
     """adjust to give player ailments"""
     # same idea as positive inventory
     ailment_mod = s.SELECTEDCHARACTER.get("Health").get("Ailment")
-    ailment_gain = random.randint(l, u)
+    ailment_gain = random.randint(lower, upper)
     ailment_mod = o.floordiv(o.add(ailment_mod, ailment_gain),1)
     s.SELECTEDCHARACTER['Health']["Ailment"]= ailment_mod
     print(f"+ {ailment_gain} days to recover ailment!")
